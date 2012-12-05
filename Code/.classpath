@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/guava-13.0.1.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-ant-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-client-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-core-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-examples-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-minicluster-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-test-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/hadoop-tools-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/mongo-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/media/sf_windows/Lib/commons-logging-api-1.0.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

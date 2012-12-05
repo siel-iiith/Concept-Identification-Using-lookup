@@ -1,0 +1,53 @@
+root@ubuntu:~# mongo
+MongoDB shell version: 2.2.0
+connecting to: test
+> use Cloud
+switched to db Cloud
+> db.Concepts.count();
+9055102
+> db.system.indexes.find();
+{ "v" : 1, "key" : { "_id" : 1 }, "ns" : "Cloud.Concepts", "name" : "_id_" }
+> db.Concepts.find({name:'hyderabad'}).explain();
+{
+        "cursor" : "BasicCursor",
+        "isMultiKey" : false,
+        "n" : 2,
+        "nscannedObjects" : 9055102,
+        "nscanned" : 9055102,
+        "nscannedObjectsAllPlans" : 9055102,
+        "nscannedAllPlans" : 9055102,
+        "scanAndOrder" : false,
+        "indexOnly" : false,
+        "nYields" : 21,
+        "nChunkSkips" : 0,
+        "millis" : 19575,
+        "indexBounds" : {
+        },
+        "server" : "ubuntu:27017"
+}
+> db.Concepts.ensureIndex({name:1});
+> db.Concepts.find({name:'hyderabad'}).explain();
+{
+        "cursor" : "BtreeCursor name_1",
+        "isMultiKey" : false,
+        "n" : 2,
+        "nscannedObjects" : 2,
+        "nscanned" : 2,
+        "nscannedObjectsAllPlans" : 2,
+        "nscannedAllPlans" : 2,
+        "scanAndOrder" : false,
+        "indexOnly" : false,
+        "nYields" : 0,
+        "nChunkSkips" : 0,
+        "millis" : 5,
+        "indexBounds" : {
+                "name" : [
+                        [
+                                "hyderabad",
+                                "hyderabad"
+                        ]
+                ]
+        },
+        "server" : "ubuntu:27017"
+}
+> 

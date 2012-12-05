@@ -1,0 +1,45 @@
+INDEX - NONE
+[Sat Nov 10 00:27:41 IST 2012][SEVERE] Query => international institute of information technology
+[Sat Nov 10 00:28:03 IST 2012][SEVERE] Found => 1
+[Sat Nov 10 00:28:03 IST 2012][SEVERE] Query => hyderabad
+[Sat Nov 10 00:28:24 IST 2012][SEVERE] Found => 2
+[Sat Nov 10 00:28:24 IST 2012][SEVERE] Query => hello
+[Sat Nov 10 00:28:45 IST 2012][SEVERE] Found => 1
+12/11/09 13:35:58 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/09 13:36:15 INFO mapred.JobClient:  map 66% reduce 0%
+12/11/09 13:41:52 INFO mapred.JobClient:  map 100% reduce 0%
+12/11/09 13:53:42 INFO mapred.JobClient: Job complete: job_201211091328_0001
+
+INDEX - db.Concepts.ensureIndex({name:1});
+[Sat Nov 10 01:09:08 IST 2012][SEVERE] Query => international institute of information technology
+[Sat Nov 10 01:09:08 IST 2012][SEVERE] Found => 1
+[Sat Nov 10 01:09:08 IST 2012][SEVERE] Query => hyderabad
+[Sat Nov 10 01:09:08 IST 2012][SEVERE] Found => 2
+[Sat Nov 10 01:09:08 IST 2012][SEVERE] Query => hello
+[Sat Nov 10 01:09:08 IST 2012][SEVERE] Found => 1
+12/11/09 14:41:56 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/09 14:42:19 INFO mapred.JobClient:  map 66% reduce 0%
+12/11/09 14:42:25 INFO mapred.JobClient:  map 100% reduce 0%
+12/11/09 14:42:30 INFO mapred.JobClient: Job complete: job_201211091328_0003
+
+/***************************** FIRST QUERY TAKES SOMETIME *****************************/
+[1352491671711][SEVERE] Query => international institute of information technology
+[1352491671788][SEVERE] Found => 1
+[1352491671788][SEVERE] Query => hyderabad
+[1352491671790][SEVERE] Found => 2
+[1352491671790][SEVERE] Query => hello
+[1352491671791][SEVERE] Found => 1
+
+[1352491789071][SEVERE] Query => hyderabad
+[1352491789133][SEVERE] Found => 2
+[1352491789134][SEVERE] Query => international institute of information technology
+[1352491789135][SEVERE] Found => 1
+[1352491789135][SEVERE] Query => hello
+[1352491789136][SEVERE] Found => 1
+/***************************** *************************** *****************************/
+
+12/11/09 15:13:17 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/09 15:13:17 INFO mapred.JobClient: Running job: job_201211091328_0005
+12/11/09 15:13:18 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/09 15:13:32 INFO mapred.JobClient:  map 100% reduce 0%
+12/11/09 15:13:37 INFO mapred.JobClient: Job complete: job_201211091328_0005
